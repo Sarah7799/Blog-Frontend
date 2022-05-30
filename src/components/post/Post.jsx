@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 export default function Post({ post }) {
-  const PF = "https://explorer-thiru.herokuapp.com/images/";
+  const PF = "/images/";
   return (
     <div className="post">
       {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
