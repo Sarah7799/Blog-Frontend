@@ -14,7 +14,7 @@ export default function Login() {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post("https://explorer-thiru.herokuapp.com/api/auth/login", {
+      const res = await axios.post("/api/auth/login", {
         username: userRef.current.value,
         password: passwordRef.current.value,
       });
@@ -47,7 +47,7 @@ export default function Login() {
           Login
         </button>
       </form>
-      <p style={{ margin: "1em", fontSize: "1rem" }}>Sample Login - Username: stark , Password: 123456</p>
+      <p style={{ margin: "1em", fontSize: "1rem" }}>Sample Login - Username: Sarah , Password: 123456</p>
     </div>
       </>
     
