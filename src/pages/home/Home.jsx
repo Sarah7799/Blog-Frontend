@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("https://explorer-thiru.herokuapp.com/api/posts" + search);
+      const res = await axios.get("/api/posts" + search);
       setPosts(res.data);
     };
     fetchPosts();
